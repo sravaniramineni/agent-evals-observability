@@ -1,0 +1,2 @@
+{"id": "refund-001", "scenario": "Customer asks for a refund status", "expected_tool": "lookup_customer"}
+{"id": "ticket-002", "scenario": "Customer reports a broken login page", "expected_tool": "lookup_customer"}
