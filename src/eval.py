@@ -2,7 +2,10 @@
 import json
 import time
 from pathlib import Path
-from .metrics import summarize
+try:
+    from .metrics import summarize
+except ImportError:  # run as script
+    from metrics import summarize
 
 DATA = Path(__file__).parent.parent / "data" / "eval_cases.jsonl"
 
